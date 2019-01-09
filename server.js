@@ -21,11 +21,11 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.use((req, res, next) => {
-	res.render('maintenance'), {
-		pageTitle: 'Maintenance'
-	};
-});
+// app.use((req, res, next) => {
+// 	res.render('maintenance'), {
+// 		pageTitle: 'Maintenance'
+// 	};
+// });
 
 app.use(express.static(__dirname + '/public_html'));
 
